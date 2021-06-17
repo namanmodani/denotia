@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+<link rel="shortcut icon" type="image/jpg" href = "https://image.flaticon.com/icons/png/512/3004/3004458.png">
+
+<style>
+body,h1 {
+    font-family: "Work Sans"; 
+    color: white; 
+    text-align: center; 
+    vertical-align: middle; 
+    font-weight: bold;
+}
+
+body, html {height: 100%; background-color: #101010; overflow-y: hidden;}
+
+p {font-family: "Work Sans"; padding-top: 10%; font-size: 70px; margin-bottom: 2%;}
+
+input {
+    size: 100px; 
+    font-family: 'Work Sans';
+}
+
+h3 {
+    padding-top: 10%; 
+    font-weight: normal;
+}
+
+.x {
+    font-family: 'Work Sans';
+}
+
+</style>
+
+<!---- Flask part -->
+
+<title> Denotia WebApp </title>
+
+<body>
+<p>Denotia WebApp</p>
+<hr width="50%">
+<h1> Upload MRI Scan for Detection </h1>
+<br>
+<form method = post enctype = multipart/form-data>
+    <input type = file name = MRI class = "x">
+    <a href = "{{ url_for ('result') }}"><input type = button value = Submit></a> 
+</form>
+<br> 
+
+<h3> Powered by Pytorch, Flask, and Bootstrap </h3>
+
+</body>
+</html>
