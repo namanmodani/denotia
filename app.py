@@ -10,7 +10,7 @@ app = Flask(__name__, template_folder='templates')
 
 #to tell flask what url shoud trigger the function index()
 @app.route('/')
-@app.route('/index')
+@app.route('/index/')
 def home():
     return render_template('index.html')
 
