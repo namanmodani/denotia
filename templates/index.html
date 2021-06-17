@@ -8,8 +8,9 @@
 body,h1 {font-family: "Work Sans"; color: white; text-align: center; vertical-align: middle; font-weight: bold;}
 body, html {height: 100%; background-color: #101010; overflow-y: hidden;}
 p {font-family: "Work Sans"; padding-top: 10%; font-size: 70px; margin-bottom: 2%;}
-input {size: 100px;}
+input {size: 100px; font-family: 'Work Sans';}
 h3 {padding-top: 10%; font-weight: normal;}
+.x {font-family: 'Work Sans';}
 
 </style>
 
@@ -20,11 +21,11 @@ h3 {padding-top: 10%; font-weight: normal;}
 <body>
 <p> Denotia Web App </p>
 <hr width="50%">
-<h1> Upload new File </h1>
+<h1> Upload MRI Scan for Detection </h1>
 <br>
 <form method = post enctype = multipart/form-data>
-    <input type = file name = MRI>
-    <a href = "result.html"><input type = submit value = Submit></a> 
+    <input type = file name = MRI class = "x">
+    <a href = "../templates/result.html"><input type = button value = Submit></a> 
 </form>
 <br> 
 
