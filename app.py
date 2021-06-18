@@ -22,6 +22,8 @@ def faq():
 @app.route('/about/')
 def about():
     return render_template('about.html')
-
+@app.route('/ftldni/')
+def ftldni():
+    return render_template('https://cind.ucsf.edu/research/grants/frontotemporal-lobar-degeneration-neuroimaging-initiative-0')
 if __name__ == "__main__":
     app.run(debug=True)
