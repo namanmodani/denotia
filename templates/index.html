@@ -23,8 +23,8 @@ input {
     font-family: 'Work Sans';
 }
 
-h3 {
-    padding-top: 10%; 
+.header {
+    padding-top: 0.5%;
     font-weight: normal;
 }
 
@@ -32,6 +32,26 @@ h3 {
     font-family: 'Work Sans';
 }
 
+.footer {
+    padding-top: 10%; 
+    font-weight: normal;
+}
+
+a {
+  color: white; 
+  text-decoration:none;
+}
+
+a:hover {
+  transition: 1s;
+}
+
+
+.link:hover {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #a9a9a9;
+  transition: 1s;
+}
 </style>
 
 <!---- Flask part -->
@@ -39,6 +59,7 @@ h3 {
 <title> Denotia WebApp </title>
 
 <body>
+    <h3 class = header><a href = "{{ url_for ('faq') }}" class = link>Frequently Asked Questions</a> | <a href = "{{ url_for ('about') }}" class = link>About Us</a></h3>
 <p>Denotia WebApp</p>
 <hr width="50%">
 <h1> Upload MRI Scan for Detection </h1>
@@ -49,7 +70,7 @@ h3 {
 </form>
 <br> 
 
-<h3> Powered by Pytorch, Flask, and Bootstrap </h3>
+<h3 class = 'footer'> Powered by Pytorch, Flask, and Bootstrap </h3>
 
 </body>
 </html>
