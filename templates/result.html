@@ -7,11 +7,53 @@
 
 
 <style>
-body,h1 {font-family: "Work Sans"; color: white; text-align: center; vertical-align: middle; font-weight: bold;}
+body,h1 {
+    font-family: "Work Sans"; 
+    color: white; 
+    text-align: center; 
+    vertical-align: middle; 
+    font-weight: bold;
+}
+
 body, html {height: 100%; background-color: #101010; overflow-y: hidden;}
+
 p {font-family: "Work Sans"; padding-top: 10%; font-size: 70px; margin-bottom: 2%;}
-input {size: 100px; font-family: 'Work Sans';}
-h3 {padding-top: 15%; font-weight: normal;}
+
+input {
+    size: 100px; 
+    font-family: 'Work Sans';
+}
+
+.header {
+    padding-top: 0.5%;
+    font-weight: normal;
+}
+
+.x {
+    font-family: 'Work Sans';
+}
+
+.footer {
+    padding-top: 10%; 
+    font-weight: normal;
+}
+
+a {
+  color: white; 
+  text-decoration:none;
+}
+
+a:hover {
+  transition: 1s;
+}
+
+.link:hover {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #a9a9a9;
+  transition: 1s;
+}
+</style>
+
 
 </style>
 
@@ -20,11 +62,14 @@ h3 {padding-top: 15%; font-weight: normal;}
 <title>Denotia WebApp</title>
 
 <body>
+    <h3 class = header><a href = "{{ url_for ('faq') }}" class = link>Frequently Asked Questions</a> | <a href = "{{ url_for ('about') }}" class = link>About Us</a></h3>
 <p>Denotia WebApp</p>
 <hr width="50%">
 <h1> Result: Frontotemporal Dementia Negative </h1>
+<br>
 <a href = "{{ url_for ('index') }}"><input type = button value = 'Go Back'></a>
-<h3> Powered by Pytorch, Flask, and Bootstrap </h3>
+<br><br>
+<h3 class = footer> Powered by Pytorch, Flask, and Bootstrap </h3>
 
 </body>
 </html>
