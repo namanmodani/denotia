@@ -44,8 +44,8 @@ input {
 }
 
 .footer {
-    padding-top: 4%; 
     font-weight: normal;
+    margin-top: 7.8rem;
 }
 
 a {
@@ -68,19 +68,20 @@ a:hover {
   font-family: 'Open Sans';
   font-weight: normal;
   font-size: 110%;
-  line-height: 1em;
+  line-height: 1rem;
 }
 
 .ftld {
-  line-height: 1em;
+  margin-top: 2.5rem;
+  line-height: 1rem;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
 .alz {
-  margin-top: 1.8em;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
-
 </style>
 
 <!---flask--->
@@ -92,15 +93,13 @@ a:hover {
 <h3 class = header><a href = "{{ url_for ('faq') }}" class = link>Frequently Asked Questions</a> | <a href = "{{ url_for ('about') }}" class = link>About Us</a></h3>
 
 <p> Scan Results </p>
-<hr width="50%"> <br>
+<hr width="50%">
 <h2 class = ftld> Frontotemporal dementia: Negative </h2>  
 <h2 class = subtype> Behavior variant FTD: Negative </h2>
 <h2 class = subtype> Semantic variant FTD: Negative </h2>
 <h2 class = subtype> Progressive nonfluent aphasia (PNFA): Negative </h2>
 <h2 class = alz> Alzheimer's disease: Negative </h2>
-<br>
 <a href = "{{ url_for ('index') }}"><input type = button value = 'Go Back'></a>
-
 <h3 class = footer> Powered by Pytorch, Flask, and Bootstrap </h3>
 
 </body>
