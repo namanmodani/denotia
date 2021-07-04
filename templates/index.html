@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-<link rel="shortcut icon" type="image/jpg" href = "https://image.flaticon.com/icons/png/512/3004/3004458.png">
+<link rel = "shortcut icon" type="image/jpg" href = "{{url_for('static', filename='dark.png')}}">
 
 <style>
 body,h1 {
@@ -15,9 +15,14 @@ body,h1 {
     font-weight: bold;
 }
 
+h1 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
 body, html {height: 100%; background-color: #101010; overflow-y: hidden;}
 
-p {font-family: "Work Sans"; padding-top: 9%; font-size: 70px; margin-bottom: 2%;}
+p {font-family: "Work Sans"; padding-top: 9%; font-size: 4.5rem; margin-bottom: 2%;}
 
 input {
     size: 100px; 
@@ -34,8 +39,8 @@ input {
 }
 
 .footer {
-    padding-top: 10%; 
     font-weight: normal;
+    padding-top: 10rem;
 }
 
 a {
@@ -50,7 +55,6 @@ a:hover {
 
 .link:hover {
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: #a9a9a9;
   transition: 1s;
 }
@@ -65,8 +69,7 @@ a:hover {
 <p>Denotia WebApp</p>
 <hr width="50%">
 <h1> Upload MRI Scan for Detection </h1>
-<br>
-<form method = "POST" enctype = multipart/form-data>
+<form method = post enctype = multipart/form-data>
     <input type = file name = MRI class = "x" accept = ".csv">
     <a href = "{{ url_for ('result') }}"><input type = button value = Predict></a> 
 </form>
