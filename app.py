@@ -7,7 +7,7 @@ import pickle
 from flask import Flask, render_template, request, url_for
 
 #creating instance of the class
-app = Flask(__name__, template_folder='Webpages')
+app = Flask(__name__, template_folder='templates')
 
 #to tell flask what url shoud trigger the function index()
 @app.route('/')
