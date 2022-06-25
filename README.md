@@ -1,12 +1,30 @@
 # Denotia
 
-An ML-based FTLD detector, Denotia is Python web app employing an image-classifying deep learning model to predict rare neurological diseases from MRI scans. 
+Denotia is a web app to predict rare neurological diseases from MRI scans.
 
-We employed:
-- FreeSurfer and GrayNet to process T1-weighted MRI scans from FTLDNI,
-- PyTorch Geometric to build the GNN, and
+## Inspiration
+
+Diagnosis of rare diseases depends majorly on professional knowledge and clinical experience, leading to unsatisfactory diagnostic accuracy. Low doctor-patient ratios and overburdened diagnostic clinics call for automated, AI-driven interventions. At the same time, attempts to discover high-quality imaging biomarkers have [been successful](https://pubmed.ncbi.nlm.nih.gov/33436059/).
+
+## Application
+
+Denotia can classify MRI scans into subtypes of frontotemporal dementia (FTD) and Alzheimer's disease (AD) within a few seconds. Our model uses a novel deep-learning method that analyzes these scans based on the differences between different structural regions of the cortex, with 86% and 84% accuracy respectively. Once implemented, it can revolutionize patient outcomes worldwide, reducing premature mortality and improving quality of care.
+
+## Program Design
+
+Denotia employs an image-classifying deep learning model built on Python and trained using scans from [FTLDNI](https://cind.ucsf.edu/research/grants/frontotemporal-lobar-degeneration-neuroimaging-initiative-0), the largest database for scans of frontotemporal lobar degeneration (FTLD). The model is capable of recognizing surrogate markers of FTLD and continuously improve.
+
+1. Cortical thicknesses are automatically extracted from uploaded scans using a preprocessing suite. This saves time and resources and prevents most manual errors.
+2. The thickness data is transformed into a network graph to serve as the data point for the algorithm.
+3. A trained, strongly optimized graph neural network model is used to classify uploaded network graphs based on regional edge-weight variations in the graph.
+4. After several rounds of feature extractions are completed in a few milliseconds, the final result is displayed as FTD positive/negative and AD positive/negative, along with the predicted sub-type.
+5. Early classification leads to efficient streamlining of interventions and treatment plans. Long-term symptom management and treatment approaches can be finalized thanks to an accurate and expedited diagnosis. Moreover, this can accelerate pharmacological interventions and clinical studies through effective patient selection, stratification, and real-time measurement of outcomes.
+
+## Software
+
+We employed the following software while building Denotia.
+
+- Python to program the DL model
+- FreeSurfer and GrayNet to process T1-weighted MRI scans from FTLDNI.
+- PyTorch Geometric to build the GNN.
 - Heroku to create and deploy the web app for end-user access.
-
-Software Used: Python3, FreeSurfer, GrayNet, PyTorch Geometric, Heroku
-
-Web App: https://denotia.herokuapp.com/
