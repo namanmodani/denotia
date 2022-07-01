@@ -4,7 +4,7 @@ Denotia is a web app to predict rare neurological diseases from MRI scans.
 
 [GitHub Repository](https://github.com/namanmodani/denotia) • [Web Application](https://denotia.herokuapp.com/) • [MIT Solve Submission](https://solve.mit.edu/challenges/horizonprize/solutions/51857)
 
-Software used: Python, Freesurfer, GrayNet, PyTorch Geometric, Heroku.
+Software used: Python, Freesurfer, GrayNet, PyTorch Geometric, Bootstrap, Heroku.
 
 ## Inspiration
 
@@ -34,7 +34,6 @@ For neurological diseases, both clinical and radiological validation is required
 
 We employed the following software while building Denotia.
 
-- Python to program the DL model
-- FreeSurfer and GrayNet to process T1-weighted MRI scans from FTLDNI
-- PyTorch Geometric to build the GNN
-- Heroku to create and deploy the web app for end-user access
+- FreeSurfer and GrayNet to process T1-weighted MRI scans from FTLDNI. This helps extract the cortical thickness, and then converted into 2D network graphs.
+- PyTorch Geometric to build the GNN. This comprises of two sets: the [GraphSAGE](https://antonsruberts.github.io/graph/graphsage/) layers, and the dense differentiable pooling layers.
+- Bootstrap and Heroku to deploy the web app for end-user access.
