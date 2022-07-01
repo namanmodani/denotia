@@ -2,13 +2,17 @@
 
 Denotia is a web app to predict rare neurological diseases from MRI scans.
 
+[GitHub Repository](https://github.com/namanmodani/denotia) • [Web Application](https://denotia.herokuapp.com/) • [MIT Solve Submission](https://solve.mit.edu/challenges/horizonprize/solutions/51857)
+
+Software used: Python, Freesurfer, GrayNet, PyTorch Geometric, Heroku.
+
 ## Inspiration
 
-Diagnosis of rare diseases depends majorly on professional knowledge and clinical experience, leading to unsatisfactory diagnostic accuracy. Low doctor-patient ratios and overburdened diagnostic clinics call for automated, AI-driven interventions. At the same time, attempts to discover high-quality imaging biomarkers have [been successful](https://pubmed.ncbi.nlm.nih.gov/33436059/).
+Diagnosis of rare diseases is majorly dependent on professional knowledge and clinical experience. Tripled with low doctor-patient ratios and overburdened diagnostic clinics, this often leads to an unsatisfactory diagnostic accuracies. At the same time, recent AI-driven interventions to discover high-quality imaging biomarkers have [been extremely successful](https://pubmed.ncbi.nlm.nih.gov/33436059/).
 
 ## Application
 
-Denotia can classify MRI scans into subtypes of frontotemporal dementia (FTD) and Alzheimer's disease (AD) within a few seconds. Our model uses a novel deep-learning method that analyzes these scans based on the differences between different structural regions of the cortex, with 86% and 84% accuracy respectively. Once implemented, it can revolutionize patient outcomes worldwide, reducing premature mortality and improving quality of care.
+Denotia can classify MRI scans into subtypes of frontotemporal dementia (FTD) and Alzheimer's disease (AD) within a few seconds. Our model uses a novel deep-learning method that analyzes these scans based on the differences between different structural regions of the cortex, with 86% and 84% accuracy respectively. This helps reduce premature mortality and improve quality of care.
 
 ## Program Design
 
@@ -25,6 +29,6 @@ Denotia employs an image-classifying deep learning model built on Python and tra
 We employed the following software while building Denotia.
 
 - Python to program the DL model
-- FreeSurfer and GrayNet to process T1-weighted MRI scans from FTLDNI.
-- PyTorch Geometric to build the GNN.
-- Heroku to create and deploy the web app for end-user access.
+- FreeSurfer and GrayNet to process T1-weighted MRI scans from FTLDNI
+- PyTorch Geometric to build the GNN
+- Heroku to create and deploy the web app for end-user access
