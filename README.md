@@ -24,11 +24,9 @@ Denotia employs an image-classifying deep learning model built on Python and tra
 4. After several rounds of feature extractions are completed in a few milliseconds, the final result is displayed as FTD positive/negative and AD positive/negative, along with the predicted sub-type.
 5. Early classification leads to efficient streamlining of interventions and treatment plans. Long-term symptom management and treatment approaches can be finalized thanks to an accurate and expedited diagnosis. Moreover, this can accelerate pharmacological interventions and clinical studies through effective patient selection, stratification, and real-time measurement of outcomes.
 
-## Diagnosis Accuracy
+## Diagnostic Accuracy
 
-Is the diagnosis confirmed? Partly. 
-
-For neurological diseases, both clinical and radiological validation is required. Our tool helps radiologists provide quantitative evidence to corroborate clinical findings. Contact your healthcare practitioner for detailed guidance.
+Is the diagnosis confirmed? Partly. For neurological diseases, both clinical and radiological validation is required. Our tool helps radiologists provide quantitative evidence to corroborate clinical findings. Contact your healthcare practitioner for detailed guidance.
 
 ## Software
 
